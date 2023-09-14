@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast News</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="icon" href="assets/img/favicon.ico">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- for owl carosel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/slicknav.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/acmeticker.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/themify-icons.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css"> -->
+    <link rel="stylesheet" href="./themify-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./new_style.css">
+
+</head>
+
+<body>
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                    Header part Start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <section>
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top black-bg d-none d-md-block">
+                    <div class="container">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>
+                                        <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
+                                        <li><img src="assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2022
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="header-info-right">
+                                    <ul class="header-social">
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li> <a href="#"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-mid d-none d-md-block">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/sports_bangla-logo_v.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <div class="header-banner f-right ">
+                                    <a href="#"><img src="assets/img/hero/header_card.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section class="sticky-top shadow-lg bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light  py-3">
+                            <div class="container-fluid">
+                                <a class="main-logo" href="index.html"><img
+                                        src="assets/img/logo/sports_bangla-logo_v.png" alt=""></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">বার্তা</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">ভিডিও</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">কোভিড ১৯</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">জাতীয়</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">স্বাদ বৈচিত্র</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">খেলা</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">বিনোদন</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">রাজনীতি</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">অর্থনীতি</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">আন্তর্জাতিক</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">ফিচার</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">ইসলাম</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">লাইফস্টাইল</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">যুক্তিতর্ক</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">শিল্প-সাহিত্য</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">ক্যারিয়ার</a>
+                                        </li>
+
+                                        <li class="nav-item active dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                অন্যান্য
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                    <!-- <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    <button class="" type="submit"></button>
+                                </form> -->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                    Header part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                    main part start
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <section class="main-banner">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-between content-header pt-3 mb-3">
+                <div class="mb-3">
+                    <h1 class="worldcup-title-1">আপনার হোমপেজ ব্যক্তিগতকৃত করুন</h1>
+                    <h1 class="worldcup-subtitle-1">খবর, ফিক্সচার এবং আপডেট আপনার প্রিয় দলের উপযোগী</h1>
+                </div>
+                <div class="worldcup-time">
+                    <div class="text-center pb-1">
+                        <a href="#">CWC OCT 05 - NOV 19</a>
+                    </div>
+
+                    <div class="text-center text-white d-flex align-items-center justify-content-center">
+                        <div><span class="time-bg">27</span> <br><span>দিন</span></div>
+                        <div><span class="time-bg">28</span> <br><span>ঘন্টা</span></div>
+                        <div><span class="time-bg">31</span> <br><span>মিনিট</span></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mb-4">
+
+                    <div>
+                        <a href="#">
+                            <div class="relative main-banner-left right-height">
+                                <img src="./assets/img/category/new_category/orthoniti1.jpg" alt="">
+                                <div class="main-left absolute">
+                                    <p>CRICKET WORLD CUP</p>
+                                    <h1 class="worldcup-title-2">ভোরে শুরু বিশ্বকাপজয়ী আর্জেন্টিনার নতুন বিশ্বকাপ অভিযান
+                                    </h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="row mt-5 pb-4">
+                        <div class="">
+                            <div class="top-carousel carousel owl-carousel">
+
+                                <a href="#">
+                                    <div class="main-bottom">
+                                        <div class="img-trans-hover">
+                                            <img class="" src="./assets/img/category/new_category/orthoniti4.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="bottom-card-content py-2">
+                                            <h1 class="text-white font-bold worldcup-title-4">‘উত্তপ্ত’ প্রথমার্ধেও গোল
+                                                পেল না বাংলাদেশ
+                                            </h1>
+                                            <p class="text-white d-flex justify-content-between pr-3"><span
+                                                    class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর
+                                                    23</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="main-bottom">
+                                        <div class="img-trans-hover">
+                                            <img class="" src="./assets/img/category/new_category/orthoniti4.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="bottom-card-content py-2">
+                                            <h1 class="text-white font-bold worldcup-title-4">‘উত্তপ্ত’ প্রথমার্ধেও গোল
+                                                পেল না বাংলাদেশ
+                                            </h1>
+                                            <p class="text-white d-flex justify-content-between pr-3"><span
+                                                    class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর
+                                                    23</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="main-bottom">
+                                        <div class="img-trans-hover">
+                                            <img class="" src="./assets/img/category/new_category/orthoniti4.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="bottom-card-content py-2">
+                                            <h1 class="text-white font-bold worldcup-title-4">‘উত্তপ্ত’ প্রথমার্ধেও গোল
+                                                পেল না বাংলাদেশ
+                                            </h1>
+                                            <p class="text-white d-flex justify-content-between pr-3"><span
+                                                    class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর
+                                                    23</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="main-bottom">
+                                        <div class="img-trans-hover">
+                                            <img class="" src="./assets/img/category/new_category/orthoniti4.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="bottom-card-content py-2">
+                                            <h1 class="text-white font-bold worldcup-title-4">‘উত্তপ্ত’ প্রথমার্ধেও গোল
+                                                পেল না বাংলাদেশ
+                                            </h1>
+                                            <p class="text-white d-flex justify-content-between pr-3"><span
+                                                    class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর
+                                                    23</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-top-iframe">
+                        <iframe
+                            src="https://www.youtube.com/embed/Y5VqBfqIEeo?si=4pEzkSYuis2ilO9J"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="text-white font-bold">আরো দেখুন</h4>
+                        <div class="small-video-card-container">
+                            <a href="#">
+                                <div class="small-video-card mb-3">
+                                    <div class="video-trans-hover">
+                                        <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg"
+                                            alt="">
+                                        <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                                class="ml-1">07:08</span></p>
+                                    </div>
+                                    <div class="small-video-content">
+                                        <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                        <small class="text-white">13 আগস্ট বুধবার</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="small-video-card mb-3">
+                                    <div class="video-trans-hover">
+                                        <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg"
+                                            alt="">
+                                        <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                                class="ml-1">07:08</span></p>
+                                    </div>
+                                    <div class="small-video-content">
+                                        <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                        <small class="text-white">13 আগস্ট বুধবার</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="small-video-card mb-3">
+                                    <div class="video-trans-hover">
+                                        <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg"
+                                            alt="">
+                                        <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                                class="ml-1">07:08</span></p>
+                                    </div>
+                                    <div class="small-video-content">
+                                        <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                        <small class="text-white">13 আগস্ট বুধবার</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="small-video-card mb-3">
+                                    <div class="video-trans-hover">
+                                        <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg"
+                                            alt="">
+                                        <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                                class="ml-1">07:08</span></p>
+                                    </div>
+                                    <div class="small-video-content">
+                                        <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                        <small class="text-white">13 আগস্ট বুধবার</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="wc-video-section pb-2">
+        <div class="container">
+            <h1 class="text-white font-bold mb-3 worldcup-title-3"><span>পুরুষদের সেরা</span> ক্রিকেট বিশ্বকাপ</h1>
+            <div class="row">
+                <div class="col-md-8 mb-4">
+                    <div class="large-video-card">
+                        <iframe class="w-100" src="https://www.youtube.com/embed/Y5VqBfqIEeo?si=4pEzkSYuis2ilO9J"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-white font-bold">সর্বকালের সেরা ক্যাচ | ICC পুরুষদের CWC</h4>
+                    <p class="text-white small-sub-title"><span>ক্রিকেট বিশ্বকাপ </span> 12 জুলাই 2023</p>
+
+                    <div class="small-video-card-container">
+                        <a href="#">
+                            <div class="small-video-card mb-3">
+                                <div class="video-trans-hover">
+                                    <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg" alt="">
+                                    <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                            class="ml-1">07:08</span></p>
+                                </div>
+                                <div class="small-video-content">
+                                    <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                    <small class="text-white">13 আগস্ট বুধবার</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="small-video-card mb-3">
+                                <div class="video-trans-hover">
+                                    <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg" alt="">
+                                    <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                            class="ml-1">07:08</span></p>
+                                </div>
+                                <div class="small-video-content">
+                                    <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                    <small class="text-white">13 আগস্ট বুধবার</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="small-video-card mb-3">
+                                <div class="video-trans-hover">
+                                    <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg" alt="">
+                                    <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                            class="ml-1">07:08</span></p>
+                                </div>
+                                <div class="small-video-content">
+                                    <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                    <small class="text-white">13 আগস্ট বুধবার</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="small-video-card mb-3">
+                                <div class="video-trans-hover">
+                                    <img class="w-100" src="./assets/img/category/new_category/orthoniti1.jpg" alt="">
+                                    <p class="text-white"> <i class="fa fa-play" aria-hidden="true"> </i> <span
+                                            class="ml-1">07:08</span></p>
+                                </div>
+                                <div class="small-video-content">
+                                    <p class="text-white font-bold">মোরসালিনের গোলে আফগানদের রুখে দিল বাংলাদেশ</p>
+                                    <small class="text-white">13 আগস্ট বুধবার</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wc-latest-videos">
+        <div class="container">
+            <h2 class="font-bold mb-3 worldcup-title-3"><span>সর্বশেষ</span> ভিডিও</h2>
+            <div class="row">
+                <div class="news-video-template owl-carousel">
+                    <a href="#">
+                        <div class="medium-video-card">
+                            <div class="medium-video">
+                                <img src="./assets/img/category/new_category/orthoniti5.jpeg" alt="">
+                                <p class="text-white video-time">
+                                    <i class="fa fa-play" aria-hidden="true"> </i>
+                                    <span class="ml-1">07:08</span>
+                                </p>
+                            </div>
+                            <div class="medium-video-content">
+                                <h4>রোনালদোর ভাবনা, মেসি আর তার প্রতিদ্বন্দ্বী নন</h4>
+                                <p class="text-white d-flex align-items-center justify-content-center gap-4 pb-2"><span
+                                        class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর 23</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="medium-video-card">
+                            <div class="medium-video">
+                                <img src="./assets/img/category/new_category/orthoniti5.jpeg" alt="">
+                                <p class="text-white video-time">
+                                    <i class="fa fa-play" aria-hidden="true"> </i>
+                                    <span class="ml-1">07:08</span>
+                                </p>
+                            </div>
+                            <div class="medium-video-content">
+                                <h4>রোনালদোর ভাবনা, মেসি আর তার প্রতিদ্বন্দ্বী নন</h4>
+                                <p class="text-white d-flex align-items-center justify-content-center gap-4 pb-2"><span
+                                        class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর 23</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="medium-video-card">
+                            <div class="medium-video">
+                                <img src="./assets/img/category/new_category/orthoniti5.jpeg" alt="">
+                                <p class="text-white video-time">
+                                    <i class="fa fa-play" aria-hidden="true"> </i>
+                                    <span class="ml-1">07:08</span>
+                                </p>
+                            </div>
+                            <div class="medium-video-content">
+                                <h4>রোনালদোর ভাবনা, মেসি আর তার প্রতিদ্বন্দ্বী নন</h4>
+                                <p class="text-white d-flex align-items-center justify-content-center gap-4 pb-2"><span
+                                        class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর 23</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="medium-video-card">
+                            <div class="medium-video">
+                                <img src="./assets/img/category/new_category/orthoniti5.jpeg" alt="">
+                                <p class="text-white video-time">
+                                    <i class="fa fa-play" aria-hidden="true"> </i>
+                                    <span class="ml-1">07:08</span>
+                                </p>
+                            </div>
+                            <div class="medium-video-content">
+                                <h4>রোনালদোর ভাবনা, মেসি আর তার প্রতিদ্বন্দ্বী নন</h4>
+                                <p class="text-white d-flex align-items-center justify-content-center gap-4 pb-2"><span
+                                        class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর 23</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="medium-video-card">
+                            <div class="medium-video">
+                                <img src="./assets/img/category/new_category/orthoniti5.jpeg" alt="">
+                                <p class="text-white video-time">
+                                    <i class="fa fa-play" aria-hidden="true"> </i>
+                                    <span class="ml-1">07:08</span>
+                                </p>
+                            </div>
+                            <div class="medium-video-content">
+                                <h4>রোনালদোর ভাবনা, মেসি আর তার প্রতিদ্বন্দ্বী নন</h4>
+                                <p class="text-white d-flex align-items-center justify-content-center gap-4 pb-2"><span
+                                        class="card-category">ক্রিকেট বিশ্বকাপ</span><span>7 সেপ্টেম্বর 23</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                    main part end
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <footer class="footer-section mt-4">
+        <div class="container">
+            <div class="row mb-3">
+
+                <div class="col-md-4">
+                    <div>
+                        <h4>যোগাযোগ</h4>
+                        <p>১১৫ কাজী নজরুল ইসলাম অ্যাভিনিউ, লেভেল ১২, <br> বাংলামোটর
+                            ঢাকা ১২০৫, বাংলাদেশ।</p>
+                    </div>
+                    <div class="footer-social">
+                        <h4 class="mb-4">সামাজিক মাধ্যম</h4>
+                        <div>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-instagram"></i></a>
+                            <a href="#"><i class="ti-youtube"></i></a>
+                            <a href="#"><i class="ti-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                    <img src="./assets/img/hero/sports_bangla-logo_v.png" alt="">
+                    <p>Sports.Bangla.com is a digital news outlet</p>
+                    <div>
+                        <h4>মোবাইল অ্যাপস ডাউনলোড করুন</h4>
+                        <div>
+                            <a href="#"><img style="width: 180px; margin-bottom: 10px;"
+                                    src="./assets/img/logo/app-store-badge.png" alt=""></a>
+                            <a href="#"><img style="width: 180px; margin-bottom: 10px;"
+                                    src="./assets/img/logo/google-play-badge.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="footer-right">
+                        <h4>নিউজরুম</h4>
+                        <div>
+                            <a href="#">+৮৮০ ১৭৩ ০৭১ ৭০২৫</a><br>
+                            <a href="#">+৮৮০ ১৭৩ ০৭১ ৭০২৬</a><br>
+                            <a href="#">+৮৮০ ৯৬১ ৩৩২ ২৭৮২</a><br>
+                            <a href="#">newsdesk@sportsbangla.news</a>
+                        </div>
+                    </div>
+                    <div class="footer-right mt-4">
+                        <h4>মার্কেটিং ও সেলস</h4>
+                        <div>
+                            <a href="#">+৮৮০ ১৭১ ৩৪২ ৩৩২২</a><br>
+                            <a href="#">sportsbangla.news</a><br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <p>sportsbangla.news সকল অধিকার সংরক্ষিত ২০১৮-২০২২।</p>
+                    <div>
+                        <a href="#">আর্কাইভ</a>
+                        <!-- <a href="#">আর্কাইভ</a>
+                        <a href="#">আর্কাইভ</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS here -->
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <!-- <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script> -->
+
+    <!-- Jquery slicknav -->
+    <!-- <script src="./assets/js/jquery.slicknav.min.js"></script> -->
+
+    <!-- Slick Plugins -->
+    <!-- <script src="./assets/js/slick.min.js"></script> -->
+
+    <!-- magnific-popup -->
+    <!-- <script src="./assets/js/jquery.magnific-popup.js"></script> -->
+
+    <!-- Breaking News Pluging -->
+    <!-- <script src="./assets/js/acmeticker.min.js"></script> -->
+
+    <!-- Scrollup, nice-select -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Jquery Plugins, main Jquery -->
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script>
+        // const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly')
+
+        // const carousel = new bootstrap.Carousel(myCarouselElement, {
+        //     interval: 2000,
+        //     touch: false
+        // })
+
+        $(document).ready(function () {
+
+            // owl carousel script----
+            $('.top-carousel').owlCarousel({
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                autoplayTimeOut: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        autoplay: false,
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false
+                    },
+                    1500: {
+                        items: 2,
+                        nav: false
+                    },
+                }
+            });
+
+            $('.news-video-template').owlCarousel({
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                autoplayTimeOut: 2000,
+                autoplayHoverPause: true,
+                navText: ['<div class="slick-arrow prev"><span class="fa fa-angle-left"></span></div>', '<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>'],
+                dots: false,
+                responsive: {
+                    0: {
+                        autoplay: true,
+                        items: 1,
+                        nav: false,
+                        dots: true
+                    },
+                    600: {
+                        autoplay: false,
+                        items: 2,
+                        nav: true
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+                        loop: true
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1047 @@
+/* new-category page styling start ------------------------------------------------- */
+/* common css */
+@font-face {
+    font-family: "Shurjo";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff2) format('woff2'), url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff) format("woff"), url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Shurjo";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_700_v2.woff2) format('woff2'), url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff) format("woff"), url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff');
+}
+
+:root {
+    --ratio: 1.112;
+    --fallback: "SolaimanLipi", "Siyam Rupali", "Roboto", "Arial", "Helvetica", "Monospace";
+    --font-1: "Shurjo", var(--fallback);
+    --font-2: "Shurjo", var(--fallback);
+    --font-3: "Roboto", var(--fallback);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: "Shurjo" !important;
+}
+
+
+
+/* .container-custom {
+    max-width: 1230px;
+    text-align: center;
+} */
+
+.main-logo {
+    display: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black !important;
+    padding: 0;
+    margin: 0 8px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Shurjo";
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: crimson !important;
+    transition: all .4s;
+}
+
+
+.absolute {
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.relative {
+    position: relative;
+}
+
+.mb-0 {
+    bottom: 0;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    background: #ffe7e6 !important;
+    padding: 5px 20px !important;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: #000;
+}
+
+.animate-charcter {
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    /* font-size: 100%; */
+    font-weight: 800;
+}
+
+@keyframes textclip {
+    from {
+        background-position: 200% center;
+    }
+}
+
+/* large news card styling */
+
+.news-card-large:hover img {
+    opacity: 80%;
+    transition: all .4s;
+}
+
+.news-card-large:hover h4 {
+    color: #ff1361;
+    transition: all .4s;
+}
+
+.news-card-large h4 {
+    font-weight: 600;
+    color: black;
+}
+
+/* medium news card styling */
+.news-card-medium p {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.news-card-medium:hover img {
+    opacity: 80%;
+    transition: all .4s;
+}
+
+.news-card-medium:hover p {
+    opacity: 80%;
+    transition: all .4s;
+}
+
+.first-category-news {
+    position: relative;
+    display: inline-block;
+}
+
+.first-category-news::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* small news card styling */
+.news-card-small {
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.news-card-small:hover p {
+    color: gray;
+    transition: all .4s;
+}
+
+.news-card-small .news-card-img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.news-card-small:hover img {
+    opacity: 70%;
+    transition: all .4s;
+}
+
+.news-card-small p {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* new-category page styling end -------------------------------------------------*/
+
+
+
+
+/* life style section styling start -------------------------------------------------*/
+
+.life-style-content h4 {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.life-style-content h4:hover {
+    color: #fc3f00;
+    transition: all .4s;
+}
+
+.life-style-content a:hover {
+    color: #fc3f00;
+    transition: all .4s;
+}
+
+.life-style-content img {
+    width: 100%;
+}
+
+.life-style-content p {
+    color: #000;
+    font-weight: 400;
+    letter-spacing: .1px;
+    text-align: justify;
+}
+
+.life-style-content p small {
+    color: rgb(107, 105, 105);
+}
+
+.life-style-content p a {
+    color: #229ad6;
+}
+
+.right-content {
+    margin-bottom: 25px;
+}
+
+.right-content a:hover h5 {
+    color: #fc3f00;
+    transition: all .4s;
+}
+
+/* life style section styling end -------------------------------------------------*/
+
+
+/* অর্থনীতি style section styling start -------------------------------------------------*/
+.orthoniti-title {
+    color: #000;
+    font-weight: 600;
+}
+
+.orthoniti-title-2 {
+    color: #000;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.orthoniti-des {
+    color: #000;
+    text-align: justify;
+}
+
+.orthoniti-top-content {
+    background: white;
+    padding: 10px;
+}
+
+.orthoniti-bottom-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.orthoniti-bottom-content:hover h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.orthoniti-bottom-body p {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.orthoniti-bottom-content h5 {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.orthoniti-bottom-content:hover h5 {
+    color: #fc3f00;
+    transition: all .5s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* অর্থনীতি style section styling end -------------------------------------------------*/
+
+
+
+/* Error page styling start ----------------------------------------------------- */
+.error-part {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.error-part img {
+    width: 100px;
+}
+
+.error-part h2 {
+    color: crimson;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.error-part p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* Error page styling end -------------------------------------------------------------- */
+
+
+
+
+
+/* footer section styling start -------------------------------------------------------------- */
+.footer-section {
+    background-color: rgb(221, 226, 230);
+    padding-top: 20px;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+}
+
+.footer-section p {
+    font-weight: 500;
+    color: #000;
+}
+
+.footer-right a {
+    color: black;
+    transition: all .5s ease-in-out;
+    font-weight: 600;
+}
+
+.footer-right a:hover {
+    color: #ff1361;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    background: #000;
+}
+
+.footer-social a i {
+    background: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.footer-social a .ti-twitter-alt {
+    color: #2962ff;
+}
+
+.footer-social a .ti-twitter-alt:hover {
+    background-color: #2962ff;
+    color: white;
+}
+
+.footer-social a .ti-instagram {
+    color: #833AB4;
+}
+
+.footer-social a .ti-instagram:hover {
+    background-color: #833AB4;
+    color: white;
+}
+
+.footer-social a .ti-youtube {
+    color: #ea2a04;
+}
+
+.footer-social a .ti-youtube:hover {
+    background-color: #ea2a04;
+    color: #fff;
+}
+
+.footer-social a .ti-facebook {
+    color: #076cf0;
+}
+
+.footer-social a .ti-facebook:hover {
+    background-color: #076cf0;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 0;
+    color: #ffe7e6;
+}
+
+.footer-bottom a:hover {
+    color: #ff1361;
+}
+
+/* footer section styling end -------------------------------------------------------------- */
+
+
+.video-section {
+    background-image: linear-gradient(-225deg,
+            #b9afda 0%,
+            /* #582b88 29%, */
+            #d34f7b 67%,
+            #edea93 100%);
+    padding: 20px 0 10px 0;
+}
+
+/* .video-card {
+    position: relative;
+}
+
+.video-card:hover .video-bottom {
+    transform: translateY(10px);
+}
+
+.video-bottom {
+    position: absolute;
+    background: #fff;
+    bottom: -10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+.video-card:hover .video-icon {
+    color: crimson;
+}
+
+.video-icon {
+    color: black;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+} */
+.anim {
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.anim:hover .play-anim-btn {
+    top: 80%;
+    left: 0;
+}
+
+.play-anim-btn {
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    background: #ff1361;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    position: absolute;
+    opacity: 70%;
+}
+
+.play-anim-btn::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: #ea2a04;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    animation: playbtn 1.5s ease-out infinite;
+}
+
+@keyframes playbtn {
+
+    0%,
+    20% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* sidebar styling */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #989595;
+    border-radius: 10px;
+}
+
+.sidebar {
+    max-height: 80vh;
+    overflow: scroll;
+    /* overflow-x: hidden; */
+}
+
+.button-1 {
+    background: #ea2a04;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-2 {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 8px 20px;
+    border: 1px solid #ea2a04;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#category_2 {
+    display: none;
+}
+
+#category_4 {
+    display: none;
+}
+
+
+
+/* cricket world cup part styling start */
+
+.worldcup-title-4 {
+    font-size: 18px;
+}
+
+.main-banner {
+    background-color: #320073;
+}
+
+.worldcup-title-1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.worldcup-subtitle-1 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.worldcup-time .time-bg {
+    background-color: #FF00A5;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0 3px;
+}
+
+.main-banner-left {
+    overflow: hidden;
+}
+
+.main-banner-left img {
+    transition: all .7s ease-in-out;
+}
+
+.main-banner-left:hover img {
+    transform: scale(1.1);
+}
+
+.main-left {
+    bottom: 4%;
+    /* position: relative;  */
+}
+
+.main-left p {
+    position: absolute;
+    background-color: #FF00A5;
+    color: #fff;
+    border-radius: 0px 10px 0px 10px;
+    padding: 0 20px;
+    margin-left: 20px;
+    top: -25px;
+}
+
+.worldcup-title-2 {
+    background: #320073;
+    color: #fff;
+    width: 85%;
+    padding: 5px 5px 5px 20px;
+}
+
+.main-top-iframe iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+.right-height img {
+    height: 77vh;
+}
+
+.main-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #271B5B;
+}
+
+.img-trans-hover img {
+    transition: all .5s ease-in;
+}
+
+.img-trans-hover {
+    width: 40%;
+    overflow: hidden;
+}
+
+.main-bottom:hover {
+    box-shadow: 0 5px 5px 0 rgba(58, 57, 57, 0.1);
+}
+
+.main-bottom:hover img {
+    transform: scale(1.1);
+}
+
+.bottom-card-content {
+    width: 60%;
+}
+
+.bottom-card-content p {
+    margin: 0;
+}
+
+.bottom-card-content .card-category {
+    color: #FF00A5;
+}
+
+
+/* world cup video section styling start */
+.wc-video-section {
+    margin-top: 50px;
+    background-color: #320073;
+    padding-top: 40px;
+}
+
+.worldcup-title-3 span {
+    color: #FF00A5;
+}
+
+.large-video-card iframe {
+    height: 78vh;
+}
+
+.small-video-card-container {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.small-video-card:hover .small-video-content p {
+    text-decoration: underline;
+}
+
+.small-video-card:hover img {
+    transform: scale(1.1);
+}
+
+.video-trans-hover {
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+
+.video-trans-hover img {
+    transition: all .6s ease-in-out;
+    border-radius: 0px !important;
+}
+
+.video-trans-hover p {
+    background-color: #FF00A5;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+}
+
+.small-sub-title {
+    font-weight: 600;
+}
+
+.small-sub-title span {
+    color: #FF00A5;
+}
+
+.small-video-card {
+    background-color: #5B338F;
+    /* gap: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-video-content {
+    width: 50%;
+    padding: 10px;
+}
+
+.small-video-content p {
+    margin: 0;
+    line-height: 20px;
+}
+
+/*small video sidebar styling */
+.small-video-card-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.small-video-card-container::-webkit-scrollbar-thumb {
+    background: #FF00A5;
+    border-radius: 10px;
+}
+
+
+/* world cup latest videos */
+.wc-latest-videos {
+    margin-top: 40px;
+}
+
+.wc-latest-videos h2 {
+    color: #320073;
+}
+
+.wc-latest-videos h2 span {
+    color: #FF00A5;
+}
+
+/* medium videos card styling */
+.medium-video-card {
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: all .3s ease-in-out;
+}
+
+.medium-video-card:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.25);
+}
+
+.medium-video {
+    overflow: hidden;
+}
+
+.medium-video img {
+    width: 100% !important;
+    transition: all .6s ease-in-out;
+}
+
+.medium-video-card:hover img {
+    transform: scale(1.1);
+}
+
+.medium-video .video-time {
+    position: absolute;
+    background: #FF00A5;
+    top: 50%;
+    right: 35%;
+    padding: 0 15px;
+    border-radius: 10px 0 10px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.medium-video-content h4 {
+    margin-top: 25px;
+    color: #320073;
+    font-weight: 600;
+    text-align: center;
+}
+
+.medium-video-content p span {
+    color: #320073;
+    font-weight: 800;
+}
+
+.medium-video-content p .card-category {
+    color: #FF00A5;
+    font-weight: 800;
+}
+
+/* owl css */
+.carousel {
+    margin: 0 auto;
+}
+
+.owl-dots {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    outline: none !important;
+    border: 2px solid #FF00A5 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 15px;
+}
+
+.owl-item {
+    margin-right: 0;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #FF00A5 !important;
+}
+
+.news-video-template {
+    position: relative;
+}
+a, p{
+    text-decoration: none !important;
+}
+.owl-nav button .prev {
+    position: absolute;
+    top: 44%;
+    left: -7px;
+    color: white;
+    background-color: #FF00A5;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 50%;
+}
+
+.owl-nav button .next {
+    position: absolute;
+    top: 44%;
+    right: -7px;
+    color: white;
+    background-color: #FF00A5;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 50%;
+}
+
+
+
+/* responsive styling */
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    .container {
+        max-width: 640px !important;
+    }
+
+    .main-logo {
+        display: block !important
+    }
+
+    /* worldcup page responsive */
+    .content-header {
+        flex-direction: column;
+    }
+
+    .worldcup-title-1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .worldcup-subtitle-1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .right-height img {
+        height: auto;
+    }
+
+    .worldcup-title-2 {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .worldcup-title-3 {
+        font-size: 28px;
+    }
+
+    .worldcup-title-4 {
+        font-size: 18px;
+    }
+
+    .main-left p {
+        font-size: 12px;
+        padding: 0 10px;
+        line-height: 20px;
+        top: -18px;
+    }
+
+    .large-video-card iframe {
+        height: 40vh;
+    }
+
+    .video-trans-hover p {
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .medium-video .video-time {
+        font-size: 15px;
+        line-height: 24px;
+        top: 57%;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+    .container {
+        max-width: 758px !important;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 1000px !important;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        max-width: 1240px !important;
+        padding: 0 30px !important;
+    }
+    .large-video-card iframe {
+        height: 84vh;
+    }
+}
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1536px) {
+    .container {
+        max-width: 1416px !important;
+        padding: 0 30px !important;
+    }
+
+    .right-height img {
+        width: 100%;
+    }
+
+    .small-video-card-container {
+        height: 64vh;
+    }
+
+    .container-fluid {
+        max-width: 1520px !important;
+    }
+}
+
+@media only screen and (min-width: 1537px) and (max-width: 1636px) {
+    .container {
+        max-width: 1630px !important;
+        padding: 0 30px !important;
+    }
+
+    .container-fluid {
+        width: 1620px !important;
+    }
+    .small-video-card-container {
+        height: 64vh;
+    }
+}
+
+@media (min-width: 1637px) {
+    .container {
+        max-width: 1630px;
+    }
+    .small-video-card-container {
+        height: 63vh;
+    }
+   
+    .large-video-card iframe {
+        height: 74vh;
+    }
+}
